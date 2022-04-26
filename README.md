@@ -30,8 +30,31 @@ The user will run one application that will then call other scripts.
 <!-- When -->
 The first couple of weeks will be me researching and seeing what I can do in python and with the given time period. The next phase will be creating the interface for the initial application. Then, I will add different scripts to the application to be called and have the user interact with them.
 
-Significance
-New Computer Science Concepts
-Interestingness
-Tasks and Schedule
+## Significance
+
+This project is significant because it will help me and others learn step by step about pentesting. There are a lot of tools out there already but I will be creating one suite of tools in python. The code will be open source allowing people to read and understand what is going on.
+
+## New Computer Science Concepts
+
+Almost everything in this project will be new to me. I will be learning new libraries in python. I will also be learning networking aspects.
+
+## Interestingness
+
+This project is interesting to me because I think pentesting is really cool. People can hack into things for money. It would be my dream job to be able to do this full time. I just need to understand more about all the topics surrounding pentesting. 
+
+## Tasks and Schedule
+There are about 14 weeks to work on the project from start to finish. With the 14 weeks dvided by the 4 phases, I will take about 3 weeks on each phase. Each week should be taking about 9-10 hours.
+
+### Phase 1: Research and setting up initial application
+Weeks 2 - 4 
+
+### Phase 2: Writing scripts for information gathering
+Weeks 5 - 7
+
+### Phase 3: Writing scripts for exploiting vulnerabilities
+Weeks 8 - 10
+
+### Phase 4: Combining scripts into the application
+Weeks 11 - 13
+
 Resources

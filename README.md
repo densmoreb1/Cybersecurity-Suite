@@ -46,15 +46,18 @@ This project is interesting to me because I think pentesting is really cool. Peo
 There are about 14 weeks to work on the project from start to finish. With the 14 weeks dvided by the 4 phases, I will take about 3 weeks on each phase. Each week should be taking about 9-10 hours.
 
 ### Phase 1: Research and setting up initial application
-Weeks 2 - 4 
+Weeks 2 - 4
+Figuring out what I can and cannot do in 13 weeks. Researching tools I can use and make. Find a GUI module to make the app and finds topics that will make a good script.
 
 ### Phase 2: Writing scripts for information gathering
 Weeks 5 - 7
+Writing/researching scripts that I can implement. Add to the GUI.
 
 ### Phase 3: Writing scripts for exploiting vulnerabilities
 Weeks 8 - 10
+Writing/researching scripts that I can implement. Add to the GUI.
+
 
 ### Phase 4: Combining scripts into the application
 Weeks 11 - 13
-
-Resources
+Get a working app. Turn into a windows.exe or a script that can be installed with all dependancies.

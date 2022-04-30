@@ -17,3 +17,9 @@ https://content.byui.edu/file/c05247fa-94c6-4359-b670-a575f25773a7/1/content/499
 
 
 I have a SPED talk on May 9th
+
+## GUI
+
+python simple gui library
+uses widget type setup
+use psgdemos as an example

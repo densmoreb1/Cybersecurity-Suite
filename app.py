@@ -36,24 +36,6 @@ def get_file_list():
     """
     return sorted(list(get_file_list_dict().keys()))
 
-def execute_command_blocking(command, *args):
-    expanded_args = []
-    for a in args:
-        expanded_args.append(a)
-        # expanded_args += a
-    try:
-        sp = subprocess.Popen([command, expanded_args], shell=True,
-                              stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        out, err = sp.communicate()
-        if out:
-            print(out.decode("utf-8"))
-        if err:
-            print(err.decode("utf-8"))
-    except:
-        out = ''
-    return out
-
-
 sg.theme('Dark Grey 13')
 sg.set_options(font='sans')
 
@@ -79,23 +61,6 @@ window = sg.Window('Cybersecurity Demo', layout, finalize=True)
 
 file_list_dict = get_file_list_dict()
 file_list = get_file_list()
-
-# event loop
-# while True:
-#     event, values = window.read()   # Read the event that happened and the values dictionary
-#     # print(event, values)
-#     if event == sg.WIN_CLOSED or event == 'Exit':     # If user closed window with X or if user clicked "Exit" button then exit
-#         break
-#     elif event == 'Run':
-#             sg.cprint('Running....', end='')
-#             sg.cprint('')
-#             for file in values['-DEMO LIST-']:
-#                 print(file)
-#                 file_to_run = str(file_list_dict[file])
-#                 sg.cprint(file_to_run, text_color='white')
-#                 execute_command_blocking(os.path.abspath(os.getcwd()), file)
-
-                
                 
 while True:
     event, values = window.read()   # Read the event that happened and the values dictionary
@@ -109,9 +74,9 @@ while True:
                 file_to_run = str(file_list_dict[file])
                 sg.cprint(file_to_run, text_color='white')
                 try:
-                    sg.execute_py_file(file_to_run)
-                    sg.execute_py_file(file)
-                
+                    res = sg.execute_py_file(file_to_run, pipe_output=True)
+                    results = sg.execute_get_results(res)
+                    print(results[0], results[1])
                 except Exception as e:
                     sg.cprint(f'Error trying to run python file.  Error info:', e, c='white on red')
                 

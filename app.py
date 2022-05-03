@@ -1,7 +1,5 @@
 import PySimpleGUI as sg
 import os
-import ntpath
-import subprocess
 
 def get_file_list_dict():
     """

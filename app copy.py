@@ -39,13 +39,18 @@ sg.set_options(font='sans')
 
 left_col = sg.Column([
     [sg.Listbox(values=get_file_list(), size=(30,20), key='-DEMO LIST-', select_mode=sg.SELECT_MODE_EXTENDED)],
-    [sg.Button('Run'), sg.Exit()]
+    [sg.Button('Run'), sg.B('Edit'), sg.B('Clear')]
+])
+
+right_col = sg.Column([
+    [sg.Multiline(size=(70, 21), write_only=True, reroute_stdout=True, echo_stdout_stderr=True, reroute_cprint=True)],
 ])
 
 layout = [
-    [sg.Pane(
-        [sg.Column([[left_col]], element_justification='l', expand_x=True, expand_y=True)],
-        orientation='h',
+    [sg.Pane([
+        sg.Column([[left_col]], element_justification='l', expand_x=True, expand_y=True), 
+        sg.Column([[right_col]], element_justification='c', expand_x=True, expand_y=True)],
+        orientation='h'
         )
     ]
 ]
@@ -61,8 +66,17 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Exit':     # If user closed window with X or if user clicked "Exit" button then exit
         break
     elif event == 'Run':
-        for file in values['-DEMO LIST-']:
-            file_to_run = str(file_list_dict[file])
-            sg.execute_py_file(file_to_run)
+            sg.cprint('Running....', end='')
+            sg.cprint('')
+            for file in values['-DEMO LIST-']:
+                file_to_run = str(file_list_dict[file])
+                sg.cprint(file_to_run, text_color='white')
+                try:
+                    res = sg.execute_py_file(file_to_run, pipe_output=True)
+                    results = sg.execute_get_results(res)
+                    print(results[0], results[1])
+                except Exception as e:
+                    sg.cprint(f'Error trying to run python file.  Error info:', e, c='white on red')
+                
 
 window.close()

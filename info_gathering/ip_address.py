@@ -5,7 +5,7 @@ sg.theme('Dark Grey 13')
 sg.set_options(font='sans')
   
 left_col = sg.Column([
-    [sg.Text('Enter the URL: '), sg.InputText(key='URL')],
+    [sg.Text('Enter the URL: '), sg.InputText()],
     [sg.B('Run', bind_return_key=True), sg.B('Clear')]
 ])
 
@@ -35,9 +35,9 @@ while True:
             IPAddr = socket.gethostbyname(values[0])
             sg.cprint(IPAddr)
         except Exception as e:
-            sg.cprint('Enter a valid address')
+            sg.cprint('Enter a valid address', e)
     elif event == 'Clear':
         window.find_element('STDOUT').Update('')
-        window.find_element('URL').Update('')
+        # window.find_element().Update('')
 
 window.close()

@@ -57,7 +57,6 @@ Writing/researching scripts that I can implement. Add to the GUI.
 Weeks 8 - 10
 Writing/researching scripts that I can implement. Add to the GUI.
 
-
 ### Phase 4: Combining scripts into the application
 Weeks 11 - 13
 Get a working app. Turn into a windows.exe or a script that can be installed with all dependancies.

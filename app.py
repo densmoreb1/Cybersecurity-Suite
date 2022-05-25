@@ -38,14 +38,27 @@ sg.theme('Dark Grey 13')
 sg.set_options(font='sans')
 
 left_col = sg.Column([
-    [sg.Listbox(values=get_file_list(), size=(30,20), key='-DEMO LIST-', select_mode=sg.SELECT_MODE_EXTENDED)],
+    [sg.Listbox(values=get_file_list(), size=(30, 10), key='-DEMO LIST-', select_mode=sg.SELECT_MODE_EXTENDED, no_scrollbar = True)],
     [sg.Button('Run'), sg.Exit()]
 ])
 
+right_col = [
+    [sg.Multiline("""
+    Welcome to my cybersecurity suite
+    Instructions:
+    - click on a script that you would like to learn more about
+    - go through the promts
+    - learn!
+    """, size=(50, 10), no_scrollbar=True)]
+]
+
 layout = [
-    [sg.Pane(
-        [sg.Column([[left_col]], element_justification='l', expand_x=True, expand_y=True)],
+    [sg.Pane([
+        sg.Column([[left_col]], element_justification='l', expand_x=True, expand_y=True),
+        sg.Column(right_col, expand_x=True, expand_y=True)
+        ], 
         orientation='h',
+        show_handle = False,
         )
     ]
 ]

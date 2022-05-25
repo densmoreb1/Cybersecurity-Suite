@@ -10,7 +10,7 @@ The purpose of this project is for me to learn more about cybersecurity practice
 
 The project will include 1 app. The app will include the other smaller gui's that will demonstrate different principles.
 
-Altogether, the project will contain 6 sctips. Each script will explore a different aspect of cybersecurity. 3 will be about information gathering and the other 3 will be about exploitation. Each script will have simple gui involved to make it easy to use. 
+Altogether, the project will contain 6 scripts. Each script will explore a different aspect of cybersecurity. 3 will be about information gathering and the other 3 will be about exploitation. Each script will have simple gui involved to make it easy to use. 
 
 At the end of the project, I will create an executable for Windows and Mac.
 
@@ -51,3 +51,13 @@ At the end of everything the program, will be a simple .exe program. When the us
 
 
 The experience will be involving and the user will be able to learn about what the scripts are doing. 
+
+## Section 4
+
+I will demo the app through screen recording. 
+
+1. Open the app through an executable
+2. The app will explain what the user can do and how to do it
+3. Clicking on the program to run will run the program in another window
+4. The new program will include instructions for the user to follow
+5. The user will learn about cybersecurity practices

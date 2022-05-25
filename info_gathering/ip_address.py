@@ -25,7 +25,7 @@ layout = [
 ]
 
 
-window = sg.Window('Simple data entry window', layout)
+window = sg.Window('Disover an IP Address', layout)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Exit':     # If user closed window with X or if user clicked "Exit" button then exit
@@ -35,7 +35,7 @@ while True:
             IPAddr = socket.gethostbyname(values[0])
             sg.cprint(IPAddr)
         except Exception as e:
-            sg.cprint('Enter a valid address', e)
+            sg.cprint('Enter a valid address')
     elif event == 'Clear':
         window.find_element('STDOUT').Update('')
         # window.find_element().Update('')

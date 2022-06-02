@@ -1,9 +1,10 @@
-import socket   
+import socket  
 import PySimpleGUI as sg
 
 sg.theme('Dark Grey 13')
 sg.set_options(font='sans')
-  
+
+# main window design
 left_col = sg.Column([
     [sg.Text('Enter the URL: '), sg.InputText()],
     [sg.B('Run', bind_return_key=True), sg.B('Clear')]
@@ -24,7 +25,18 @@ layout = [
     ]
 ]
 
+# popup
+sg.popup("""
+Welcome to ip address discovery
+This is a simple app that allows you to find an ip address for a url
+""")
 
+sg.popup("""
+An ip address is an address that uniquely identifies a host. A host can be a computer, printer, or a router.
+URL's and ip address tell you where to go. They identify the same place. 
+""")
+
+# main window
 window = sg.Window('Disover an IP Address', layout)
 while True:
     event, values = window.read()

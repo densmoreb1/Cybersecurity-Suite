@@ -42,10 +42,10 @@ Altogether, the project will contain 6 scripts. Each script will explore a diffe
 - The user can send a file over to a machine that when opened it will run a background process that will send key presses to the other machine.
 
 ## Section 2b
-Extra mile stuff / must do at least half
-1. Information about other scripts that are already available
-
-2. I dunno
+1. Subdomain enumerator
+- This will find domains or routes that can be used to traverse a website that should not be seen by a normal user
+2. Hashcracker
+- Find the hashing algorithm used to hash a password and unhash it
 
 ## Section 3
 

@@ -4,9 +4,26 @@ import PySimpleGUI as sg
 sg.theme('Dark Grey 13')
 sg.set_options(font='sans')
 
+sg.popup(
+"""
+Welcome to the port scanner
+This we will learn a tool that will scan ports and show us what is running on that port.
+""", any_key_closes=True)
+sg.popup(
+"""
+Ports are how data is sent between computers. 
+Like a ship and a port at a harbor, there can only be one ship at a port.
+In our case, the ship is an application.
+""", any_key_closes=True)
+sg.popup(
+"""
+Port numbers range from 0 - 65,535
+Networking devices enforce strict rules when communicating with each other.
+""", any_key_closes=True)
+
 layout = [
     [sg.Text('Enter an IP address: '), sg.InputText()],
-    [sg.Multiline(size=(50, 10), reroute_stdout=True, reroute_cprint=True, key='OUT')],
+    [sg.Multiline(size=(50, 10), reroute_stdout=True, reroute_cprint=True, key='OUT', expand_x=True)],
     [sg.B('Scan', bind_return_key=True), sg.B('Clear')]
 ]
 

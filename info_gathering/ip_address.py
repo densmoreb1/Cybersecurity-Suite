@@ -32,7 +32,8 @@ This is a simple app that allows you to find an ip address for a url
 """)
 
 sg.popup("""
-An ip address is an address that uniquely identifies a host. A host can be a computer, printer, or a router.
+An ip address is an address that uniquely identifies a host. 
+A host can be a computer, printer, or a router.
 URL's and ip address tell you where to go. They identify the same place. 
 """)
 

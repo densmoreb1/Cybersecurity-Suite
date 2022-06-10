@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import os
+from re import search
 
 def get_file_list_dict():
     """
@@ -16,7 +17,7 @@ def get_file_list_dict():
 
     for dirname, dirnames, filenames in os.walk(path):
         for filename in filenames:
-            if filename.endswith('.py') and filename != 'app.py':
+            if filename.endswith('.py') and search('App', filename):
                 fname_full = os.path.join(dirname, filename)
                 if filename not in demo_files_dict.keys():
                     demo_files_dict[filename] = fname_full

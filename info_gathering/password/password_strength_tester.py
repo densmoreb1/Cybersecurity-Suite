@@ -7,8 +7,10 @@ import numpy as np
 
 def tester():
     layout = [
+        [sg.Text('Enter your password: ')],
         [sg.Input(size=(25, 10) ,key='password')],
-        [sg.Multiline(size=(25, 3), reroute_cprint=True, key='out', reroute_stdout=False, auto_refresh=True, no_scrollbar=True)],
+        # [sg.Text('')]
+        [sg.Multiline(size=(25, 4), reroute_cprint=True, key='out', reroute_stdout=False, auto_refresh=True, no_scrollbar=True)],
         [sg.B('Run', bind_return_key=True)]
     ]
 

@@ -30,7 +30,7 @@ layout = [
 window = sg.Window('Disover an IP Address', layout)
 while True:
     event, values = window.read()
-    if event == sg.WIN_CLOSED or event == 'Exit':     # If user closed window with X or if user clicked "Exit" button then exit
+    if event == sg.WIN_CLOSED or event == 'Exit': 
         break
     elif event == 'Check':
         if values[0].lower() in HOSTS:
@@ -38,7 +38,7 @@ while True:
             ip_main()
             window.close()
         else:
-            sg.popup("Incorrect")
+            sg.popup("Incorrect", any_key_closes=True)
     elif event == 'Clear':
         window.find_element('out').Update('')
 

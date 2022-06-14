@@ -34,7 +34,7 @@ while True:
         break
     elif event == 'Check':
         if values[0].lower() in HOSTS:
-            sg.popup("You are correct", any_key_closes=True)
+            sg.popup("You are correct")
             ip_main()
             window.close()
         else:

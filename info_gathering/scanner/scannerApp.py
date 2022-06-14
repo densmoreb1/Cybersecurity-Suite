@@ -66,7 +66,7 @@ while True:
     elif event == 'Check':
         print(type(values[0]))
         if int(values[0]) in PORTS:
-            sg.popup("You are correct", any_key_closes=True)
+            sg.popup("You are correct")
             scanner()
             window.close()
         else:

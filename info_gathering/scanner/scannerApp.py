@@ -1,5 +1,5 @@
 import PySimpleGUI as sg 
-from network_scanner import scanner
+from scanner import scanner
 
 sg.theme('Dark Grey 13')
 sg.set_options(font='sans')

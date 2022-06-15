@@ -2,8 +2,7 @@
 # either user can select which they want to do test or generate
 # or user can generate after seeing how strong their password is
 
-from password_tester import tester
-from password_generator import random_password
+from passwordTester import tester
 import PySimpleGUI as sg
 
 sg.theme('Dark Grey 13')
@@ -30,7 +29,6 @@ while True:
         if values[0].lower() == '30 million':
             sg.popup("You are correct")
             tester()
-            random_password()
             window.close()
         else:
             sg.popup('Incorrect')

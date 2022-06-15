@@ -1,6 +1,4 @@
 # possibly add a color coded similar to the website
-# modify printing how long it would take
-# if it is higher than however much then change the unit
 
 import PySimpleGUI as sg
 import numpy as np

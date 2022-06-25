@@ -50,7 +50,9 @@ right_col = [
     - click on a script that you would like to learn more about
     - go through the promts
     - learn!
-    """, size=(50, 8), no_scrollbar=True)]
+    """, size=(50, 8), no_scrollbar=True)],
+    [sg.Text("Program Output")],
+    [sg.Multiline("", size=(50, 8), key="out", write_only=True, reroute_stdout=True, echo_stdout_stderr=True, reroute_cprint=True)]
 ]
 
 layout = [
@@ -77,6 +79,8 @@ while True:
     elif event == 'Run':
         for file in values['-DEMO LIST-']:
             file_to_run = str(file_list_dict[file])
-            sg.execute_py_file(file_to_run)
+            id = sg.execute_py_file(file_to_run, pipe_output=True)
+            results = sg.execute_get_results(id)
+            window["out"].update(results)
 
 window.close()

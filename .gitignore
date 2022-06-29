@@ -2,3 +2,4 @@
 __pycache__
 catKey.py
 status_reports/
+*.key

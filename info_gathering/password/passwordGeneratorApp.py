@@ -43,7 +43,11 @@ while True:
     
     if event == 'Generate':
         window.find_element('out').Update('')
-        sg.cprint(generate_random_password(int(values[0])))
+        
+        if values[0].isnumeric():
+            sg.cprint(generate_random_password(int(values[0])))
+        else:
+            sg.popup("Enter a valid number")
 
     if event == sg.WIN_CLOSED or event == 'Exit':     # If user closed window with X or if user clicked "Exit" button then exit
         break

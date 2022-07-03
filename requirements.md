@@ -13,9 +13,9 @@ The project will include 1 app. The app will include the other smaller gui's tha
 
 Altogether, the project will contain 6 scripts. Each script will explore a different aspect of cybersecurity. 3 will be about information gathering and the other 3 will be about exploitation. Each script will have simple gui involved to make it easy to use. 
 
-1. Executable File
+1. Docker Container
 
-- The program can be condensed into one file that contains everything it needs to run
+- The app will contained in a docker image and container, where people can pull the image and run it without worring about dependencies
 
 2. Look up Ip Address
 
@@ -50,7 +50,7 @@ Altogether, the project will contain 6 scripts. Each script will explore a diffe
 
 ## Section 3
 
-At the end of everything the program, will be a simple .exe program. When the user runs the program, they will be greeted with the different options discussed above.
+When the user runs the program, they will be greeted with the different options discussed above.
 
 The experience will be involving and the user will be able to learn about what the scripts are doing. 
 

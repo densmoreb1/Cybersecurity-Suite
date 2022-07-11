@@ -4,22 +4,22 @@
  
 The purpose of this project is to teach me more about cybersecurity and all the things that come with it. Programming, networking, and operating systems.
 
-I plan to create a small suite of scripts that will have two differnt purposes. Half be used to gather information about a target. The other half will be used to attack a target.
+I plan to create a small suite of scripts that will have two different purposes. Half be used to gather information about a target. The other half will be used to attack a target.
 
 ## Background / Prior Knowledge
 
-I have very little background with cybersecurity. The field of cybersecurity I am interested in includes a lot of networking, programming, and knowlege about the three main operating systems, linux, MacOS, and Windows. I know a little bit about networking which will most likely have the steepest learning curve. I know a lot about programming, and a medium amount of operating systems.
+I have very little background with cybersecurity. The field of cybersecurity I am interested in includes a lot of networking, programming, and knowledge about the three main operating systems, linux, MacOS, and Windows. I know a little bit about networking which will most likely have the steepest learning curve. I know a lot about programming, and a medium amount of operating systems.
 
 ## Description
 
 <!-- Why -->
-The purpose of this project will be for me and others to gain a better understand on certain concepts and tools used by penetration testers. Some of the tools can be hard to understand what they are doing and I hope to create an enviroment that will be easy to understand. Whoever is using this is interested in learning how to use the production tools. 
+The purpose of this project will be for me and others to gain a better understand on certain concepts and tools used by penetration testers. Some of the tools can be hard to understand what they are doing and I hope to create an environment that will be easy to understand. Whoever is using this is interested in learning how to use the production tools. 
 
 <!-- What -->
-I will be creating my own suite of applications or scripts that will do two important things when conducting a pentest. Information gathering and exploitation. Another thing it will do is teach the user how to use the real tools in a bigger enviroment. My suite will be a learning enviroment for people new to pentesting. 
+I will be creating my own suite of applications or scripts that will do two important things when conducting a pentest. Information gathering and exploitation. Another thing it will do is teach the user how to use the real tools in a bigger environment. My suite will be a learning environment for people new to pentesting. 
 
 <!-- Who -->
-The people that will be using this will be people who are new to pentesting. They don't have any knowlege about the tools used to conduct information gathering or exploitation. But they are interested in learning them. I will provide a simple interface that will explain what the scripts are doing and how they can be helpful when conducting a pentest.
+The people that will be using this will be people who are new to pentesting. They don't have any knowledge about the tools used to conduct information gathering or exploitation. But they are interested in learning them. I will provide a simple interface that will explain what the scripts are doing and how they can be helpful when conducting a pentest.
 
 <!-- Where -->
 I will developing this in Visual Studio Code. I will create an simple application that will give the user the option of learning a certain amount of tools.
@@ -43,7 +43,7 @@ Almost everything in this project will be new to me. I will be learning new libr
 This project is interesting to me because I think pentesting is really cool. People can hack into things for money. It would be my dream job to be able to do this full time. I just need to understand more about all the topics surrounding pentesting. 
 
 ## Tasks and Schedule
-There are about 14 weeks to work on the project from start to finish. With the 14 weeks dvided by the 4 phases, I will take about 3 weeks on each phase. Each week should be taking about 9-10 hours.
+There are about 14 weeks to work on the project from start to finish. With the 14 weeks divided by the 4 phases, I will take about 3 weeks on each phase. Each week should be taking about 9-10 hours.
 
 ### Phase 1: Research and setting up initial application
 Weeks 2 - 4
@@ -59,4 +59,4 @@ Writing/researching scripts that I can implement. Add to the GUI.
 
 ### Phase 4: Combining scripts into the application
 Weeks 11 - 13
-Get a working app. Turn into a windows.exe or a script that can be installed with all dependancies.
+Get a working app. Turn into a windows.exe or a script that can be installed with all dependencies.

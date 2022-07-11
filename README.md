@@ -2,7 +2,7 @@
 
 This is for learning purposes only. There are already tools out there similar to the ones I created. 
 
-I created an application that is supposed to be a learning enviroment for people to see how some of the more advanced tools work.
+I created an application that is supposed to be a learning environment for people to see how some of the more advanced tools work.
 
 Have caution running any of the scripts that involve scanning a network, encrypting, or running malware.
 

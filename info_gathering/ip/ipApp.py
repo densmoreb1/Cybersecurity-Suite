@@ -27,7 +27,7 @@ layout = [
     [sg.B('Check', bind_return_key=True)]
 ]
 
-window = sg.Window('Disover an IP Address', layout)
+window = sg.Window('Discover an IP Address', layout)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Exit': 

@@ -15,7 +15,7 @@ Altogether, the project will contain 6 scripts. Each script will explore a diffe
 
 1. Docker Container
 
-- The app will contained in a docker image and container, where people can pull the image and run it without worring about dependencies
+- The app will contained in a docker image and container, where people can pull the image and run it without worrying about dependencies
 
 2. Look up Ip Address
 

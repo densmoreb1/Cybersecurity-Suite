@@ -10,11 +10,10 @@ sg.popup(""" A regular computer nowadays can guess passwords at about 30 million
 
 layout = [
     # [sg.Text('How many times can an average computer guess a second?')],
-    [sg.Text('The more different characters there are in a password \
-        the amount of guesses grows exponentially')],
+    [sg.Text('The more different characters there are in a password the amount of guesses grows exponentially')],
     # [sg.Input()],
     # [sg.B('Check', bind_return_key=True)]
-    [sg.B('Okay', bind_return_key=True)]
+    [sg.B('Check', bind_return_key=True)]
 ]
 
 window = sg.Window('Password Strength', layout)

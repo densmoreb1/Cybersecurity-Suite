@@ -10,5 +10,5 @@ Have caution running any of the scripts that involve scanning a network, encrypt
 1. Clone the repository
 2. Run `pip install -r requirements.txt`
     This will install some dependencies such as PysimpleGUI, pyinstaller, cyrptography
-3. Run python3 app.py 
+3. Run `python3 app.py`
 4. Follow the instructions
